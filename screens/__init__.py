@@ -11,7 +11,4 @@ from kivy.uix.button import Button
 import requests
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.scrollview import ScrollView
-from components.FolderButton import FolderButton
-from components.NoteCard import NoteCard
-from components.LoadingButton import LoadingButton
 from kivy.clock import Clock

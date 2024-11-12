@@ -8,7 +8,6 @@ from components.UnderlineTextInput import UnderlineTextInput
 # Screens
 from screens.LoginScreen import LoginScreen
 from screens.ResultScreen import ResultScreen
-from screens.NotesScreen import NotesScreen
 
 class ModernLoginApp(App):
     def build(self):
@@ -16,7 +15,6 @@ class ModernLoginApp(App):
         sm = ScreenManager()
         sm.add_widget(LoginScreen(name='login'))
         sm.add_widget(ResultScreen(name='result'))
-        sm.add_widget(NotesScreen(name='notes'))
         return sm
 
 if __name__ == '__main__':

@@ -13,13 +13,13 @@ class ResultScreen(Screen):
         self.result_label = Label(text='', font_size=18, color=(0, 0, 0, 1))
         
         go_to_notes = Button(
-            text='Proceed',
+            text='Copy',
             size_hint_y=None,
             height=50,
             background_color=(0, 0, 0, 1),
             background_normal=''
         )
-        go_to_notes.bind(on_press=self.go_to_notes_screen)
+        go_to_notes.bind(on_press=self.copy_text)
         
         back_button = Button(
             text='Back to Login',
@@ -48,5 +48,5 @@ class ResultScreen(Screen):
     def go_back(self, instance):
         self.manager.current = 'login'
     
-    def go_to_notes_screen(self, instance):
-        self.manager.current = 'notes'
+    def copy_text(self, instance):
+        return "copied"
