@@ -35,4 +35,3 @@ This is actually a gig for a client but feel free to fork this project, submit i
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
